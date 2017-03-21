@@ -4,7 +4,7 @@ var fs = require("fs");
 var oldAuthor;
 
 // ADD YOUR BOT'S TOKEN HERE
-const token = "YOUR_BOTS_TOKEN";
+const token = "";
 
 bot.on('ready', () => {
   
@@ -24,7 +24,7 @@ bot.on('message', message => {
 		if(commandName[1].charAt(0) == "~")
 			{
 				checkExistingCommand(commandText,commandName);
-				message.channel.sendMessage("Command " + commandName[1] + " has been created");
+				message.channel.sendMessage("");
 			} else {
 				message.channel.sendMessage("Command must contain '~'");
 			}
@@ -100,7 +100,7 @@ function checkExistingCommand(commandText,commandName)
 // Appends and/or creates the text files.
 function createCommand(desc,b,com)
 {
-	var fileName = "./commands/" + com + ".txt";
+	var fileName = "./commands/" + com + ".bin";
 	if(b == true)
 	{
 		fs.writeFile(fileName,desc,function(err){
@@ -109,7 +109,7 @@ function createCommand(desc,b,com)
 		}
 		});
 	} else if (b == false){
-		fs.appendFile('./commands/commands.txt',com+';',(err) =>
+		fs.appendFile('./commands/DONOTDELETE.txt',com+';',(err) =>
 		{
 		if(err) throw err;
 		});
