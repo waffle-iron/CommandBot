@@ -1,4 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/MopeDude/CommandBot.png?label=ready&title=Ready)](https://waffle.io/MopeDude/CommandBot)
+[![Stories in Ready](https://badge.waffle.io/MopeDude/CommandBot.png?label=ready&title=Ready)](https://waffle.io/MopeDude/CommandBot)
 # TriniroBot
 TrinitoBot is a branch of iArePJ's CommandBot used for the discord server Unlimited Force HQ. (https://discord.gg/XYR2Jm5)
 (Note that you need nodejs to run this.)
